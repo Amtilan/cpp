@@ -2,14 +2,19 @@
 
 using namespace std;
 
+map<string, int> map_string = {
+    {"SAT", 1},
+    {"MON", 6},
+    {"TUE", 5},
+    {"WED", 4},
+    {"THU", 3},
+    {"FRI", 2},
+    {"SUN", 7},
+};
+
 int main (){
     string s;
     cin >> s;
-    if (s == "SAT") cout << 1;
-    else if (s == "MON") cout << 6;
-    else if (s == "TUE") cout << 5;
-    else if (s == "WED") cout << 4;
-    else if (s == "THU") cout << 3;
-    else if (s == "FRI") cout << 2;
-    else if (s == "SUN") cout << 7;
+    cout << map_string[s] << endl;
+    return 0;
 }
