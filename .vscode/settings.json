@@ -126,8 +126,10 @@
     "thread": "cpp",
     "typeindex": "cpp",
     "typeinfo": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "cassert": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "taipyStudio.gUI.elementsFilePaths": []
 }
