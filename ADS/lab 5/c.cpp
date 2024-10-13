@@ -8,9 +8,8 @@ int main() {
     cin >> n >> x;
     vector<long long> arr(n);
     
-    for (long long i = 0; i < n; i++) {
+    for (long long i = 0; i < n; i++)
         cin >> arr[i];
-    }
 
     priority_queue<long long> maxHeap(arr.begin(), arr.end());
 
