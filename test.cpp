@@ -4,25 +4,23 @@ using namespace std;
 
 
 int main() {
-    long long n, x, sum = 0;
-    cin >> n >> x;
-    vector<long long> arr(n);
+    set<int> data ;
+    data.insert(10);
+    data.insert(10);
+    data.insert(20);
+    data.insert(20);
+    data.insert(30);
+    data.insert(30);
+    data.insert(40);
+    data.insert(40);
+    int sum = 0;
+    set<int, greater<int> >::iterator itr;
+
+    for ( itr = data.begin(); itr != data.end(); itr++ )
+    {
+        sum+=*itr;
+    }
     
-    for (long long i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-
-    priority_queue<long long> maxHeap(arr.begin(), arr.end());
-
-    while (x--) {
-        long long seat = maxHeap.top();
-        maxHeap.pop();
-        sum += seat;
-        seat--;
-        maxHeap.push(seat);
-    }
-
-    cout << sum << endl;
-
+    cout<<"the sum ="<<sum <<endl;
     return 0;
 }
