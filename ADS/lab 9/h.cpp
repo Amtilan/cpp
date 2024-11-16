@@ -22,7 +22,7 @@ int main(){
     int ans = 0, n = s.size();
     for (int i = 1; i < n; i++){
         int len = i - res[i - 1];
-        if ((i / len) % 2 == 0 && i % len == 0)
+        if ((i / len) % 2 == 0 && i % len == 0)r
             ans++;
     }
     cout << ans;
